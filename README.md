@@ -32,7 +32,7 @@ System Previews
 * **Right:** Intruder Telemetry Logs
 
 Installation & Setup
-1. Clone the repository: `git clone https://github.com/yourusername/CloakVault.git`
+1. Clone the repository: `git clone https://github.com/OmSawant8/CloakVault.git`
 2. Open the project in **Android Studio**.
 3. Connect your own Firebase project:
    * Create a project in the [Firebase Console](https://console.firebase.google.com/).
