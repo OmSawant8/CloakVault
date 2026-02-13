@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/void_bg">
+
+    <com.example.cloakvault.MatrixEffectView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC05000A" /> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="48dp">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/hidden_preview"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@android:drawable/ic_lock_lock"
+        android:layout_marginBottom="24dp"
+        app:tint="@color/neon_violet"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="CLOAK_VAULT"
+        android:textColor="@color/neon_cyan"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:shadowColor="@color/neon_violet"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="15"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="SECURE_SYSTEM_ACTIVE"
+        android:textColor="@color/text_dim"
+        android:textSize="12sp"
+        android:letterSpacing="0.2"
+        android:layout_marginBottom="64dp"/>
+
+    <Button
+        android:id="@+id/btn_auth"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/card_surface"
+        android:text="> AUTHENTICATE"
+        android:textColor="@color/neon_cyan"
+        android:fontFamily="monospace"
+        android:textSize="16sp"
+        android:elevation="6dp"/>
+
+    <Button
+        android:id="@+id/btn_duress"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00000000"
+        android:text="> MANUAL_OVERRIDE"
+        android:textColor="@color/error_red"
+        android:fontFamily="monospace"
+        style="?android:attr/borderlessButtonStyle"/>
+
+</LinearLayout>
+
+</FrameLayout>

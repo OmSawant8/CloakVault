@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/void_bg"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/photo_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="> ENCRYPTED_GALLERY"
+        android:fontFamily="monospace"
+        android:textColor="@color/neon_cyan"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/photo_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/photo_header"
+        android:scrollbars="vertical" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_menu_camera"
+        android:backgroundTint="@color/neon_violet"
+        android:contentDescription="Take Photo" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/fab_camera"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:backgroundTint="@color/card_surface"
+        android:contentDescription="Import" />
+
+</RelativeLayout>
